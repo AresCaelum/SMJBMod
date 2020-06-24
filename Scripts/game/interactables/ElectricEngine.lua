@@ -244,7 +244,7 @@ function ElectricEngine.server_onFixedUpdate( self, timeStep )
 		local appliedImpulseCost = 0.015625
 		local batteryCost = 0
 		for _, bearing in ipairs( bearings ) do
-			if bearing.appliedImpulse * bearing.angularVelocity < 0 then -- No added fuel cost if the bearing is decelerating
+			if bearing.appliedImpulse * bearing.angularVelocity <= 0 then -- No added fuel cost if the bearing is decelerating
 				batteryCost = batteryCost + math.abs( bearing.appliedImpulse ) * appliedImpulseCost
 			end
 		end

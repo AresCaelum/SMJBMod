@@ -739,7 +739,6 @@ obj_survivalobject_ruinchest = sm.uuid.new( "79cc711e-7094-4029-8419-bbbf8f08c6f
 -- test.json
 ----------------------------------------
 obj_craftbot_omnicrafter = sm.uuid.new( "176e4c20-93d6-4792-860e-7043f12003a6" )
-
 ----------------------------------------
 -- toolparts.json
 ----------------------------------------

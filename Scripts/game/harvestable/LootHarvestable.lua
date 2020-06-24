@@ -95,12 +95,15 @@ function LootHarvestable.client_onClientDataUpdate( self, params )
 	end
 
 	if  params.uuid == obj_outfitpackage_common then
+
 		self.cl.itemEffect = sm.effect.createEffect( "Loot - OutfitCommonGlowItem" )
 		self.cl.itemEffect:setPosition( self.harvestable:getPosition() + sm.vec3.new( 0, 0, 0.575 ) )
 	elseif params.uuid == obj_outfitpackage_rare then
+
 		self.cl.itemEffect = sm.effect.createEffect( "Loot - OutfitRareGlowItem" )
 		self.cl.itemEffect:setPosition( self.harvestable:getPosition() + sm.vec3.new( 0, 0, 0.575 ) )
 	elseif params.uuid == obj_outfitpackage_epic then
+
 		self.cl.itemEffect = sm.effect.createEffect( "Loot - OutfitEpicGlowItem" )
 		self.cl.itemEffect:setPosition( self.harvestable:getPosition() + sm.vec3.new( 0, 0, 0.575 ) )	
 	else

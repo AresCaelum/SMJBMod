@@ -43,7 +43,7 @@ function BurntTree.sv_onHit( self, damage )
 			end
 
 			local lootList = {}
-			local slots = math.random( 2, 4 )
+			local slots = math.random( 6, 8 )
 			for i = 1, slots do
 				lootList[i] = { uuid = obj_resource_ember, quantity = 1 }
 			end

@@ -2,7 +2,7 @@ dofile("$SURVIVAL_DATA/Scripts/game/survival_loot.lua")
 
 GrowingOilGeyser = class()
 
-local GrowTickTime = DAYCYCLE_TIME_TICKS * 2.5
+local GrowTickTime = DAYCYCLE_TIME_TICKS * 1.5
 
 -- Server
 function GrowingOilGeyser.server_onCreate( self )
@@ -42,6 +42,7 @@ end
 
 function GrowingOilGeyser.client_onCreate( self )
 	self.cl = {}
+
 	self.cl.acitveGeyser = sm.effect.createEffect( "Oilgeyser - OilgeyserPickedLoop" )
 	self.cl.acitveGeyser:setPosition( self.harvestable.worldPosition )
 	self.cl.acitveGeyser:setRotation( self.harvestable.worldRotation )

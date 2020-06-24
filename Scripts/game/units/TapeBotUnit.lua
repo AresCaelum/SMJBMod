@@ -225,7 +225,6 @@ function TapebotUnit.server_onFixedUpdate( self, dt )
 							end
 						end
 					end
-
 					if #validShapes > 0 then
 						local targetShape = validShapes[math.random( 1, #validShapes )]
 						local targetPosition = targetShape.worldPosition

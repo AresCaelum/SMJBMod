@@ -45,6 +45,7 @@ function MechanicCharacter.client_onGraphicsLoaded( self )
 	self.burningEffect = sm.effect.createEffect( "Fire -medium01", self.character, "jnt_hips" )
 	self.diveEffect = sm.effect.createEffect( "Mechanic underwater", self.character, "jnt_head" )
 	self.refineEffect = sm.effect.createEffect( "Multiknife - Use" )
+
 	self.koEffect = sm.effect.createEffect( "Mechanic - KoLoop", self.character, "jnt_head" )
 	self.chewEffect = sm.effect.createEffect( "Mechanic - EatBaguette", self.character, "jnt_head" )
 		
@@ -125,9 +126,11 @@ function MechanicCharacter.client_onUpdate( self, deltaTime )
 			if not self.diveEffect:isPlaying() then
 				self.diveEffect:start()
 			end
+
 		elseif not self.character:isDiving() then
 			if self.diveEffect:isPlaying() then
 				self.diveEffect:stop()
+
 			end
 		end
 	end

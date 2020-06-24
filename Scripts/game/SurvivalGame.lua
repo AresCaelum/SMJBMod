@@ -562,7 +562,15 @@ function SurvivalGame.server_onPlayerJoined( self, player, newPlayer )
 			sm.container.setItem( inventory, 11, tool_weld, 1 )
 		else
 			sm.container.setItem( inventory, 0, tool_sledgehammer, 1 )
-			sm.container.setItem( inventory, 1, tool_lift, 1 )
+			sm.container.setItem( inventory, 1, tool_spudgun, 1 )
+                        sm.container.setItem( inventory, 2, tool_lift, 1 )
+			sm.container.setItem( inventory, 3, tool_connect, 1 )
+            
+                        sm.container.setItem( inventory, 5, obj_plantables_potato, 50 )
+                        sm.container.setItem( inventory, 6, obj_plantables_potato, 50 )
+			sm.container.setItem( inventory, 7, obj_plantables_potato, 50 )
+                        sm.container.setItem( inventory, 10, tool_paint, 1 )
+			sm.container.setItem( inventory, 11, tool_weld, 1 )
 		end
 
 		sm.container.endTransaction()

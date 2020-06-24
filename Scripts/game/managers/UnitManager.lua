@@ -10,7 +10,7 @@ local PlayerDensityTickInterval = 4800 -- Save player position once every other 
 
 local CropAttackCellScanCooldownTime = 0.5 * 40
 local CellScanCooldown = 15 * 40
-local MinimumCropValueForRaid = 10
+local MinimumCropValueForRaid = 1000
 local HighValueCrop = 3
 
 local RaidWaveCooldown = DaysInTicks( 4.5 / 24 )
